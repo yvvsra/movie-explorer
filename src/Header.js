@@ -4,6 +4,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
 import Menu from "@material-ui/core/Menu";
+import "./Header.css";
 
 export default class PrimarySearchAppBar extends React.Component {
 
@@ -11,7 +12,7 @@ export default class PrimarySearchAppBar extends React.Component {
     return (
       <div >
         <AppBar position="fixed">
-          <Toolbar>
+          <Toolbar className="header">
             <Typography variant="h6" noWrap>
               Movie Explorer
             </Typography>
