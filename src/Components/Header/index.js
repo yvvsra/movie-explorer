@@ -15,7 +15,6 @@ export default class Header extends React.Component {
                 className="inputRoot"
               />
             </div>
-            <div  />
         </div>
       </div>
     );
