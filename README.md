@@ -1,11 +1,8 @@
 ## Instructions
 - Fork and clone this repo (or pull down the latest version of the code)
 - create a new branch for your work
-- create a Movie component to render the individual movie details page
-- Set up an event listener in the MovieList component so users can click on a movie and see the details 
-
-
-
+- Implemented the fetch to populate the movies
+- As part of that, create a method that returns the URL
 
 
 
