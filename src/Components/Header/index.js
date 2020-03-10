@@ -4,7 +4,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
 import Menu from "@material-ui/core/Menu";
-import "./Header.css";
+import "./styles.css";
 
 export default class PrimarySearchAppBar extends React.Component {
 

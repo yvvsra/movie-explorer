@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import movies from './data';
-import MoviesList from "./MoviesList"
-import Header from "./Header"
+import MoviesList from "./Components/MovieList"
+import Header from "./Components/Header"
 
 export default class App extends React.Component {
   render() {
