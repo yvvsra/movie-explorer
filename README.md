@@ -1,7 +1,7 @@
 ## Instructions
 - Fork and clone this repo (or pull down the latest version of the code)
 - create a new branch for your work
-- Implemented the fetch to populate the movies
+- Implement the fetch to populate the movies
 - As part of that, create a method that returns the URL
 
 
