@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
 import movies from './data';
-import MoviesList from "./Components/MovieList"
-import Header from "./Components/Header"
+import MoviesList from "./Components/MovieList/index.js"
+import Header from "./Components/Header/index.js"
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -15,4 +14,4 @@ export default class App extends React.Component {
   }
 }
 
-// export default App;
+export default App;

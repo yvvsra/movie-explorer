@@ -1,16 +1,41 @@
 .header {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    background-color: #3F51B5;
+    color: white;
+    height: 70px;
+}
+
+.header h3 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    padding: 7px 20px;
 }
 
 .search {
     position: relative;
+    height: 40px;
+    line-height:40px;
+    background-color: #5B6CC0;
+    padding: 0 20px;
+    border: 1px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.15);
-    margin: 0 16px;
-}
+    margin: 15px 16px;}
 
 .inputRoot {
-    color: inherit;
+
+    color: white;
+    font-size: 20px;
+    background-color: #5B6CC0;
+    border: none;
+    padding-left: 10px;
+
+}
+
+.inputRoot::placeholder {
+    color: #ccc;
+    opacity: 1;
+    font-size: 20px;
+    width: 200px;
+    display: inline-block;
+
 }
