@@ -16,8 +16,8 @@ export default class MoviesList extends Component {
     render() {
 
         const baseURL = "http://image.tmdb.org/t/p/w1280/"
-        // console.log(this.props.list) 
-        const list = this.props.list.map(movie =>
+
+        const list = this.props.movies.map(movie =>
             <Grid item xs={4}>
                 <Paper>
 
