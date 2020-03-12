@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      movies: []
+      movies: [],
+      query: ""
     }
   }
 
@@ -24,10 +25,29 @@ class App extends React.Component {
     })
    }
 
+   handleChange= (e)=>{
+     this.setState({
+       query: e.target.value
+      })
+   }
+   handlesubmit= (e)=>{
+     if(e.key ==="Enter"){
+      fetch(`${this.BASE_URL}/search/movie?api_key=${this.API_KEY}&query=${this.state.query}&include_adult=false`)
+      .then(resp => resp.json())
+      .then(json=> {
+        this.setState({
+          movies: json.results
+        }, () => console.log(this.state))
+      })
+    }
+   }
+
   render() {
-    return (
+    return ( 
       <div>
-          <Header />
+          <Header query={this.state.query} 
+          handleChange={this.handleChange} 
+          handlesubmit={this.handlesubmit} />
           <MoviesList movies={this.state.movies} />        
       </div>
     );
