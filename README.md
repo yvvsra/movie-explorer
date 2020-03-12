@@ -3,9 +3,7 @@
 2.  Create a new branch for your changes  
 3.  To minimize git merge conflicts, *only make changes that need to be made* 
 4.  Implement the search functionality
-5.  Once you get it working, refactor your App.js code:
-    -- Create a constructURL method that will work both for the initial fetch and for fetching the search results
-    -- Create a fetchMovies method that will work for both the initial render and for rendering the search results. Think about: where will this method be called?
+5.  Once you get it working, refactor your App.js code: 1) Create a constructURL method that will work both for the initial fetch and for fetching the search results; 2) Create a fetchMovies method that will work for both the initial render and for rendering the search results. Think about: where will this method be called?
 6.  SUBMIT A PULL REQUEST to the dev branch when you’re done
 
 
