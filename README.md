@@ -1,8 +1,21 @@
 ## Instructions
-- Fork and clone this repo (or pull down the latest version of the code)
-- create a new branch for your work
-- Implement the fetch to populate the movies
-- As part of that, create a method that returns the URL
+1.  FORK AND CLONE THIS REPO!!
+2.  Create a new branch for your changes
+3.  Implement the search functionality
+    Steps?
+4.  Once you get it working, refactor your App.js code:
+    -- Create a constructURL method that will work both for the initial fetch and for fetching the search results
+    -- Create a fetchMovies method that will work for both the initial render and for rendering the search results. Think about: where will this method be called?
+5.  SUBMIT A PULL REQUEST to the dev branch when you’re done
+
+If you finish early, work on your movie page:
+
+-- Be sure it includes an image, some details about the movie, and the FIRST FOUR cast members, with pictures; other elements are optional
+-- To view your movie page while you're working on it, you can comment out the MovieList component in App.js and render Movie instead
+-- BONUS: Include an element in the interface that users can click to view all cast members
+
+On Saturday we will look at a couple different ways to implement the Movie page (conditional rendering and React Routes) and get it hooked up.
+
 
 
 
