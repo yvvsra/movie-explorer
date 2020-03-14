@@ -1,10 +1,10 @@
 ## Instructions
-- Fork and clone this repo (or pull down the latest version of the code)
-- create a new branch for your work
-- create a Movie component to render the individual movie details page
-- Set up an event listener in the MovieList component so users can click on a movie and see the details 
-
-
+1.  FORK AND CLONE THIS REPO!!
+2.  Create a new branch for your changes  
+3.  To minimize git merge conflicts, *only make changes that need to be made* 
+4.  Implement the search functionality
+5.  Once you get it working, refactor your App.js code: 1) Create a constructURL method that will work both for the initial fetch and for fetching the search results; 2) Create a fetchMovies method that will work for both the initial render and for rendering the search results. Think about: where will this method be called?
+6.  SUBMIT A PULL REQUEST to the dev branch when you’re done
 
 
 
