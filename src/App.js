@@ -2,6 +2,8 @@ import React from 'react';
 // import movies from './data';
 import MoviesList from "./Components/MovieList/index.js"
 import Header from "./Components/Header/index.js"
+import Movie from "./Components/Movie/index.js";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends React.Component {
   constructor() {
@@ -61,7 +63,16 @@ class App extends React.Component {
           <Header query={this.state.query} 
           handleChange={this.handleChange} 
           handlesubmit={this.handlesubmit} />
-          <MoviesList movies={this.state.movies} />        
+          <Router >
+            <Route exact path='/' render={() => (
+              <MoviesList movies={this.state.movies} />
+            )}
+            />
+            <Route path='/movies/:id' render={(routerProps) => (
+              <Movie {...routerProps} movies={this.state.movies}/>
+            )}
+            />
+          </Router>
       </div>
     );
   }

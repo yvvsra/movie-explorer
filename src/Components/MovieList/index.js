@@ -5,7 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,12 +18,12 @@ export default class MoviesList extends Component {
         const baseURL = "http://image.tmdb.org/t/p/w1280/"
 
         const list = this.props.movies.map(movie =>
-            <Grid item xs={4}>
+            <Grid key={movie.id} item xs={4}>
                 <Paper>
 
                     <Card >
                         <CardActionArea>
-                            
+                            <Link to={`/movies/${movie.id}`} >
                             <CardContent>
                                 <img src={baseURL + movie.poster_path} width="100%" alt="Poster" />
                                 <Typography gutterBottom variant="h5" component="h2">
@@ -31,6 +31,7 @@ export default class MoviesList extends Component {
                                 </Typography>
                                
                             </CardContent>
+                            </Link>
                         </CardActionArea>
                     </Card>
                 </Paper>
